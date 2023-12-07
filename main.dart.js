@@ -81317,13 +81317,13 @@ B.b.N(m,p.nQ())
 m.push(J.aCi(p))}}return m},
 a3A(){if(!this.b.f)return""
 return"static %CLASS_MODEL_NAME%%CLASS_SUFFIX% deserialize(Map<String, dynamic> json) {\n    return %CLASS_MODEL_NAME%%CLASS_SUFFIX%.fromJson(json);\n  }\n"},
-ak7(){var s,r,q,p,o,n,m,l,k,j,i,h,g=this
-if(g.gkl())return null
-if(g.d!=null){s=t.s
+ak7(){var s,r,q,p,o,n,m,l,k,j,i,h,g,f=this
+if(f.gkl())return null
+if(f.d!=null){s=t.s
 r=A.b([],s)
 q=A.b([],s)
 p=A.cF(t.N)
-s=g.d
+s=f.d
 s.toString
 o=A.a3(s).i("cB<1,dJ>")
 n=new A.cB(s,o)
@@ -81337,25 +81337,26 @@ i="    this."+m
 if(j.length!==0)B.b.jz(r,0,i+j+",")
 else r.push(i+j+",")
 q.push("  "+k+" "+m+";")}B.b.fC(q,new A.a2S())
-p.N(0,g.nQ())
-s=p.bE(0,";\n")
-o=g.a3A()
-h=A.ff("import 'package:json_annotation/json_annotation.dart';\n%OTHER_IMPORTS%\n\npart '%PATH_MODEL_NAME%%PATH_SUFFIX%.g.dart';\n\n@JsonSerializable(explicitToJson: %EXPLICIT_TO_JSON%)\nclass %CLASS_MODEL_NAME%%CLASS_SUFFIX% {\n  %CLASS_CONSTRUCTOR_NAME%%CLASS_SUFFIX%({\n%PARAMS%\n  });\n\n%FIELDS%\n\n  %STATIC_DESERIALIZE%\n  factory %CLASS_MODEL_NAME%%CLASS_SUFFIX%.fromJson(Map<String, dynamic> json) {\n      return _$%CLASS_MODEL_NAME%%CLASS_SUFFIX%FromJson(json);\n    }\n  \n  Map<String, dynamic> toJson() {\n    return _$%CLASS_MODEL_NAME%%CLASS_SUFFIX%ToJson(this);\n  }\n}\n","%STATIC_DESERIALIZE%",o)
-h=A.ff(h,"%OTHER_IMPORTS%",s+";")
+p.N(0,f.nQ())
+h=p.bE(0,";\n")
+if(h.length!==0)h+=";"
+s=f.a3A()
+g=A.ff("import 'package:json_annotation/json_annotation.dart';\n%OTHER_IMPORTS%\n\npart '%PATH_MODEL_NAME%%PATH_SUFFIX%.g.dart';\n\n@JsonSerializable(explicitToJson: %EXPLICIT_TO_JSON%)\nclass %CLASS_MODEL_NAME%%CLASS_SUFFIX% {\n  %CLASS_CONSTRUCTOR_NAME%%CLASS_SUFFIX%({\n%PARAMS%\n  });\n\n%FIELDS%\n\n  %STATIC_DESERIALIZE%\n  factory %CLASS_MODEL_NAME%%CLASS_SUFFIX%.fromJson(Map<String, dynamic> json) {\n      return _$%CLASS_MODEL_NAME%%CLASS_SUFFIX%FromJson(json);\n    }\n  \n  Map<String, dynamic> toJson() {\n    return _$%CLASS_MODEL_NAME%%CLASS_SUFFIX%ToJson(this);\n  }\n}\n","%STATIC_DESERIALIZE%",s)
+g=A.ff(g,"%OTHER_IMPORTS%",h)
 s=B.b.bE(r,"\n")
-h=A.ff(h,"%PARAMS%",s)
+g=A.ff(g,"%PARAMS%",s)
 s=B.b.bE(q,"\n")
-h=A.ff(h,"%FIELDS%",s)
-s=g.gu2()
-h=A.ff(h,"%PATH_MODEL_NAME%",s)
-h=A.ff(h,"%PATH_SUFFIX%","")
-s=g.ge5()
-h=A.ff(h,"%CLASS_MODEL_NAME%",s)
-s=g.zK()
-h=A.ff(h,"%CLASS_CONSTRUCTOR_NAME%",s)
-h=A.ff(h,"%CLASS_SUFFIX%","")
-h=A.ff(h,"%EXPLICIT_TO_JSON%","true")
-return new A.jG(g.gu2()+".dart",g.ge5(),h,g.a)}return null},
+g=A.ff(g,"%FIELDS%",s)
+s=f.gu2()
+g=A.ff(g,"%PATH_MODEL_NAME%",s)
+g=A.ff(g,"%PATH_SUFFIX%","")
+s=f.ge5()
+g=A.ff(g,"%CLASS_MODEL_NAME%",s)
+s=f.zK()
+g=A.ff(g,"%CLASS_CONSTRUCTOR_NAME%",s)
+g=A.ff(g,"%CLASS_SUFFIX%","")
+g=A.ff(g,"%EXPLICIT_TO_JSON%","true")
+return new A.jG(f.gu2()+".dart",f.ge5(),g,f.a)}return null},
 ga20(){var s,r
 if(this.f==null||!this.gkl()||!1)return!1
 s=this.f
